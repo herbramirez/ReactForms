@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Authenticate from './Authenticate'
+import SignUpForm from './SignUpForm'
 
 function App() {
-
+<>
+  <SignUpForm/>
+  <Authenticate/>
+</>
 }
 
 export default App
