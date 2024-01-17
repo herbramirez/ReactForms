@@ -3,11 +3,15 @@ import './App.css'
 import Authenticate from './Authenticate'
 import SignUpForm from './SignUpForm'
 
-function App() {
-<>
-  <SignUpForm/>
-  <Authenticate/>
-</>
-}
+export default function App() {
 
-export default App
+  const [token, setToken] = useState(null)
+
+
+  return (
+    <>
+      <Authenticate token={token} setToken={setToken} />
+      <SignUpForm token={token} setToken={setToken}/>
+    </>
+  );
+}
